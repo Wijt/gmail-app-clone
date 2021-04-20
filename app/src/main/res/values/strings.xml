@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VizeSinavi</string>
+    <string name="menu_1">Posta</string>
+    <string name="menu_2">Toplantı</string>
 </resources>
