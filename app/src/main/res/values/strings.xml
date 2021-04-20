@@ -2,4 +2,5 @@
     <string name="app_name">VizeSinavi</string>
     <string name="menu_1">Posta</string>
     <string name="menu_2">Toplantı</string>
+    <string name="action_button_text">Oluştur</string>
 </resources>
