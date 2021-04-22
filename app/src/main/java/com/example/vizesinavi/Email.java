@@ -12,4 +12,14 @@ public class Email {
         content = _content;
         date = _date;
     }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "header='" + header + '\'' +
+                ", desc='" + desc + '\'' +
+                ", content='" + content + '\'' +
+                ", date='" + date + '\'' +
+                '}';
+    }
 }
