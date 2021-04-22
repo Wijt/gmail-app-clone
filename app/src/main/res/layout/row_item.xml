@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
+    android:padding="5dp"
     android:layout_marginVertical="10dp"
-    >
+>
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="89dp"
-        android:layout_height="51dp"
-        android:layout_weight="1"
-        android:contentDescription="resim"
+        android:id="@+id/ri_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="0"
+        android:translationY="-8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/presence_online" />
@@ -20,8 +23,8 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,26 +33,34 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:id="@+id/ri_header"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Google Maps TimeLine"
             android:textColor="@color/black"
+            android:maxLines="1"
+            android:ellipsize="end"
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/ri_desc"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
             android:text="🌍 Test YK, Ocak ayı özetiniz"
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/ri_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bu zaman çizelgesi e-postası, gittiği..." />
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Bu zaman çizelgesi e-postası, gittiğin yerleri göstermektedir." />
 
     </LinearLayout>
 
@@ -65,7 +76,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
+            android:id="@+id/ri_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -73,10 +85,11 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <com.google.android.material.textview.MaterialTextView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="⭐"
             android:textSize="18sp" />
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
