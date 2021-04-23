@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                String filterKey = charSequence.toString();
+                String filterKey = charSequence.toString().toLowerCase();
                 ArrayList<Email> filtered = new ArrayList<>();
                 for(int p = 0; p < emails.size(); p++){
                     String header = emails.get(p).header.toLowerCase();
